@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kronos Cortex · Accountability Layer</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Fondos -->
+    <div class="space-bg"></div>
+    <canvas id="estrellasCanvas"></canvas>
+
+    <!-- NAVEGACIÓN -->
+    <nav>
+        <div class="nav-container">
+            <span class="logo">🧠 Kronos Cortex</span>
+            <div class="nav-links">
+                <a href="#" class="active">Dashboard</a>
+                <a href="#pilares">Pilares</a>
+                <a href="#consejo">Consejo</a>
+                <span class="status-badge" id="statusSistema">🟢 Operativo</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENIDO -->
+    <div class="contenedor">
+
+        <!-- HEADER: Estado y lema -->
+        <header class="hero">
+            <h1>Kronos <span class="highlight">Cortex</span></h1>
+            <p class="subtitulo">Accountability Layer · Evidencia criptográfica de razonamiento IA</p>
+            <div class="lema">
+                <span class="badge-gold">⚡ La integridad es el nuevo soberano del trillón de dólares.</span>
+            </div>
+            <!-- Contador de integridad (simulado) -->
+            <div class="hash-status">
+                <span>🔗 Integridad del Sistema: </span>
+                <span id="hashIntegridad" class="hash-text">0x7F3A...C9E2</span>
+                <span class="pill">SHA-3</span>
+            </div>
+        </header>
+
+        <!-- SECCIÓN: 8 PILARES DE PODER -->
+        <section id="pilares" class="seccion">
+            <h2>⚙️ Los 8 Pilares de Poder</h2>
+            <div class="grid-pilares" id="gridPilares">
+                <!-- Generado por JavaScript -->
+            </div>
+        </section>
+
+        <!-- SECCIÓN: SIMULADOR DEL CONSEJO (3 Rondas) -->
+        <section id="consejo" class="seccion consejo-section">
+            <h2>👁️ Deliberación del Consejo (Council)</h2>
+            <div class="consejo-container">
+                <div class="log-consejo" id="logConsejo">
+                    <p>⏳ Esperando deliberación...</p>
+                </div>
+                <div class="veredicto-box" id="veredictoBox">
+                    <span class="veredicto-label">Veredicto Final:</span>
+                    <span id="veredictoFinal" class="veredicto-text">---</span>
+                    <span id="firmaFinal" class="firma-text">Firma: ---</span>
+                </div>
+                <div class="botones-consejo">
+                    <button id="btnDeliberar">▶️ Iniciar Deliberación (3 Rondas)</button>
+                    <button id="btnVeto" class="btn-peligro">⛔ KronosVeto (Kill Switch)</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- FLUJO DE DATOS -->
+        <section class="seccion flujo-section">
+            <h2>🔄 Flujo de Datos Zero Trust</h2>
+            <div class="flujo-linea">
+                <span class="flujo-paso">Anonymizer</span>
+                <span class="flecha">→</span>
+                <span class="flujo-paso">Broker</span>
+                <span class="flecha">→</span>
+                <span class="flujo-paso">Council</span>
+                <span class="flecha">→</span>
+                <span class="flujo-paso">Veto (LFPDPPP/GDPR)</span>
+                <span class="flecha">→</span>
+                <span class="flujo-paso highlight-flujo">Black Card</span>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2026 Kronos Cortex · Infraestructura fundacional para IA estratégica.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
